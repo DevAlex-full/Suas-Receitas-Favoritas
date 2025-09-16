@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitadas & Descobertas - Suas Receitas Favoritas</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>Pitadas & Descobertas</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#receitas">Receitas</a></li>
+                <li><a href="#categorias">Categorias</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Descubra sabores incríveis</h2>
+                <p>Um catálogo completo de receitas com imagem, título e descrição. Pesquise e filtre por categoria: doce, salgado ou vegetariano.</p>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Buscar receitas...">
+                    <button id="search-btn">🔍</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="screen">
+                        <div class="app-preview">
+                            <h3>Pitadas & Descobertas</h3>
+                            <div class="recipe-card">
+                                <div class="recipe-image"></div>
+                                <div class="recipe-info">
+                                    <h4>Bolo de Chocolate</h4>
+                                    <p>Delicioso bolo fofinho...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categorias" class="categories">
+            <div class="container">
+                <h2>Explore por Categoria</h2>
+                <div class="category-grid">
+                    <div class="category-card" data-category="doce">
+                        <div class="category-icon">🍰</div>
+                        <h3>Doces</h3>
+                        <p>Sobremesas irresistíveis</p>
+                    </div>
+                    <div class="category-card" data-category="salgado">
+                        <div class="category-icon">🍲</div>
+                        <h3>Salgados</h3>
+                        <p>Pratos principais e petiscos</p>
+                    </div>
+                    <div class="category-card" data-category="vegetariano">
+                        <div class="category-icon">🥗</div>
+                        <h3>Vegetarianos</h3>
+                        <p>Opções saudáveis e saborosas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipes Section -->
+        <section id="receitas" class="recipes">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Receitas em Destaque</h2>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="todas">Todas</button>
+                        <button class="filter-btn" data-filter="doce">Doces</button>
+                        <button class="filter-btn" data-filter="salgado">Salgados</button>
+                        <button class="filter-btn" data-filter="vegetariano">Vegetarianos</button>
+                    </div>
+                </div>
+                
+                <div class="recipes-grid" id="recipes-grid">
+                    <!-- Recipes will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="sobre" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Sobre o Pitadas & Descobertas</h2>
+                        <p>Nossa plataforma foi criada para conectar pessoas apaixonadas pela culinária. Aqui você encontra receitas cuidadosamente selecionadas, organizadas por categorias e com descrições detalhadas.</p>
+                        <p>Seja você um iniciante na cozinha ou um chef experiente, nosso catálogo tem opções para todos os gostos e níveis de habilidade.</p>
+                        <div class="features">
+                            <div class="feature">
+                                <span class="feature-icon">🔍</span>
+                                <div>
+                                    <h4>Busca Inteligente</h4>
+                                    <p>Encontre receitas rapidamente</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">🏷️</span>
+                                <div>
+                                    <h4>Categorias Organizadas</h4>
+                                    <p>Filtre por tipo de prato</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="cooking-illustration">
+                            <span class="cooking-emoji">👨‍🍳</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Pitadas & Descobertas</h3>
+                    <p>Transformando ingredientes em experiências.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#receitas">Receitas</a></li>
+                        <li><a href="#categorias">Categorias</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>📧 contato@pitadasedescoberta.com</p>
+                    <p>📱 (11) 99999-9999</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Desenvolvido por DevAlex-full</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./src/scripts/engine.js"></script>
+</body>
+</html>
